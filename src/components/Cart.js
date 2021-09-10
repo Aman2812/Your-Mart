@@ -58,15 +58,8 @@ function Cart() {
         <div className="cart-container">
             <div className="cartItems-container">
                 <div className="cart-heading">
-                     <h1>Shoping Cart</h1>
+                     <h1>Shopping Cart</h1>
                      <button type="button" className="btn btn-danger btn-sm" onClick={removeAllItem}>Clear All</button>
-                </div>
-                <div className="cartItems-header">
-                    <ul>
-                        <li className="li-1">Product Details</li>
-                        <li className="li-2">Quantity</li>
-                        <li className="li-3">Price</li>
-                    </ul> 
                 </div>
                 {
                     cartData.map((item)=>{
@@ -75,7 +68,6 @@ function Cart() {
                             )
                         })
                 }
-                <div className="cartItems-footer"></div>
             </div>
             <div className="bill-container">
                 <h1>ORDER SUMMARY</h1>
