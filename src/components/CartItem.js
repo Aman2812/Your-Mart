@@ -12,20 +12,19 @@ function CartItem(props) {
 
     return (
         <div className="main-cartItem">
-            <div className="img-div">
-                <img src={image} alt="item-img"></img>
-            </div>
-            <div className="product-details-div">
-                <h1>{title}</h1>
-                <p>{category}</p>
-            </div>
-            <div className="calculation-div">
-                <div className="calculation-item">
-                    <p onClick={()=>decrementItem(id)}>-</p>
-                    <h3 className="calculation-qty">{qty}</h3>
-                    <p onClick={()=>incrementItem(id)}>+</p>
-                    <h3 className="calculation-price">${totalPrice}</h3>
-                    <i className="fa fa-trash-o del-btn" onClick={()=>deleteItemHandler(id)}></i>
+            <img src={image} alt="tv" />
+            <div className="cartItem-details">
+                <div className="cartItem-content">
+                    <h1>{title}</h1>
+                    <p onClick={()=>deleteItemHandler(id)}>&times;</p>
+                </div>
+                <div className="cartItem-calculation">
+                    <div className="cartItem-qty">
+                        <p onClick={()=>decrementItem(id)}>-</p>
+                        <p className="main-qty">{qty}</p>
+                        <p onClick={()=>incrementItem(id)}>+</p>
+                    </div>
+                    <h2>${totalPrice}</h2>
                 </div>
             </div>
         </div>
