@@ -6,7 +6,7 @@ function CartItem(props) {
 
     const{incrementItem, decrementItem, deleteItemHandler} = useContext(ProdContext)
 
-    const {id,title, image, qty, price, category} = props.data;
+    const {id,title, image, qty, price} = props.data;
     
     const totalPrice = price * qty;
 
