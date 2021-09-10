@@ -69,7 +69,7 @@ const Contact = () => {
 
                                 <div className="contact-leftside col-12 col-lg-5">
                                     <h1 className="main-heading fw-bold">Connect With Our <br /> Sales Team.</h1>
-                                    <p className="main-hero-para">Lorem ipsum dolor sit amet consectetur adipisicing elit.Deserunt eaque alias similique.</p>
+                                    <p className="main-hero-para">We are available for 24/7 and we are happy to resolve your queries.</p>
                                     <figure>
                                     <img src="./images/hero1.jpg" alt="contatUsImg" className="img-fluid"/>
                                     </figure>
